@@ -1,0 +1,71 @@
+.roof {
+}
+
+.roof a {
+	text-decoration: none;
+}
+
+.roof-footer {
+	background-color: white;
+	border: 1px solid #d3d3d3;
+	border-top: none;
+	overflow: hidden;
+	margin-bottom: 10px;
+	padding: 0px 3px;
+}
+
+.roof-media {
+	cursor: pointer;
+	position: relative;
+}
+
+.roof-media-footer {
+	bottom: 0px;
+	position: absolute;
+	width: 100%;
+	background-color: rgba(245, 245, 245, 0.65);
+
+	font-size: 22px;
+	line-height: 22px;
+	font-weight: bold;
+	color: #555;
+	display: block;
+	margin: 0;
+	padding: 0px 3px;
+}
+
+@media screen and (min-width: 768px) {
+  .roof-media-footer {
+		font-size: 24px;
+		line-height: 24px;
+  }
+}
+
+.roof-media-footer span {
+	margin: 0px 5px;
+}
+
+button.true {
+  color: #ffffff !important;
+  background-color: #ff7518 !important;
+  border-color: #ff7518 !important;
+}
+
+.roof-field-box {
+	width: 100px;
+}
+
+.roof-label {
+	font-size: 0.7em;
+	display: block;
+	color: #717171;
+}
+
+.roof-field {
+	display: block;
+	color: #4f4f4f;
+}
+
+.expanded {
+	display: none;
+}

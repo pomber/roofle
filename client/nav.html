@@ -1,0 +1,44 @@
+<template name="nav">
+  <nav class="navbar navbar-default" role="navigation">
+
+    <div class="navbar-header pull-left" style="width:165px">
+      <a class="navbar-brand" href="#">Roshi</a>
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><span id="current-folder">Inbox</span><b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="javascript:void(0)" id="inbox-link">Inbox</a></li>
+            <li><a href="javascript:void(0)" id="fav-link">Favorites</a></li>
+            <li><a href="javascript:void(0)" id="trash-link">Trash</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar-header pull-right" style="overflow:hidden">
+      <ul class="nav navbar-nav">
+        <li>
+          <div class="input-group" id="add-source-container" style="display:none">
+            <input type="text" class="form-control" placeholder="Paste url..." id="new-source">
+            <span class="input-group-btn">
+              <button class="btn btn-default navbar-btn" type="button" id="btn-add-source">Add</button>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="pull-right" id="scan-sources-container">
+            <button type="button" class="btn btn-default navbar-btn" id="btn-scan">
+              <span class="glyphicon glyphicon-cloud-download"></span>
+              <span class="hidden-xs">Scan sources</span>
+            </button>
+            <button type="button" class="btn btn-default navbar-btn" id="btn-show-add-source">
+              <span class="glyphicon glyphicon-plus"></span>
+              <span class="hidden-xs">Add source</span>
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+  </nav>
+</template>

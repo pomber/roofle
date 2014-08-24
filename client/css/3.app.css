@@ -1,0 +1,43 @@
+
+body {
+	background-image: url("/background.png");
+	background-repeat: repeat;
+}
+
+.img-responsive.img-full {
+	width: 100%;
+}
+
+.img-responsive {
+	display: inline;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-dialog {
+    width: 90%;
+  }
+}
+
+.photos-container {
+	width: 100%;
+	text-align: center;
+}
+
+.hidden-xs {
+  display: inline-block !important;
+}
+
+@media (max-width: 767px) {
+	.hidden-xs {
+  	display: none!important;
+ 	}
+}
+
+
+@media (min-width: 430px) and (max-width: 768px) {
+	.col-ms-6 {
+    float: left;
+    width: 50%;
+	}
+}
+

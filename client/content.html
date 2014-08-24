@@ -1,0 +1,85 @@
+<template name="content">
+
+
+  <div class="container">  
+
+    <div class="row">
+
+    	<div>
+  	    {{#each roofs}}
+  	      {{> roof}}
+  	    {{/each}}
+    	</div>
+
+    </div>
+
+    {{> photos}}
+
+  </div>
+
+</template>
+
+<template name="roof">
+	<div class="roof col-xs-12 col-ms-6 col-sm-4 col-md-3">		
+		
+		<div class="roof-media">
+	    <img src={{thumbnailUrl}} class="img-responsive img-full roof-thumbnail not-expanded"/>
+      {{#each photos}}
+        <img src={{this}} class="img-responsive img-full expanded"/>
+      {{/each}}
+      <div class="roof-media-footer">        
+        <span class="roof-price pull-right">{{price}}</span>
+      </div>      
+	  </div>
+
+	  <div class="roof-footer">
+  		<span class="roof-label">Address:</span>
+  		<span class="roof-field">{{address}}</span>
+      <div class="roof-field-box pull-left">
+        <span class="roof-label">Surface:</span>
+        <span class="roof-field">{{surface}}</span>
+      </div>
+      <div class="roof-field-box pull-left">
+        <span class="roof-label">Ambients:</span>
+        <span class="roof-field">{{roomsCount}}</span>
+      </div>
+      <div class="roof-field-box pull-left">
+        <span class="roof-label">Expenses:</span>
+        <span class="roof-field">{{expenses}}</span>
+      </div>
+      <div class="roof-field-box pull-left">
+        <span class="roof-label">Age:</span>
+        <span class="roof-field">{{age}}</span>
+      </div>
+      <div class="roof-field-box pull-left">
+        <span class="roof-label">Type:</span>
+        <span class="roof-field">{{type}}</span>
+      </div>
+      <div class="pull-right expanded">
+        <br/>
+        <span class="roof-label">Details:</span>
+        <br/>
+        <span class="roof-field">{{{details}}}</span>
+        <br/>
+      </div>
+      <div class="pull-right expanded">
+        <a type="button" class="btn btn-link roof-site" href="{{url}}" target="_blank">
+          View in {{siteName}}
+          <span class="glyphicon glyphicon-new-window"></span>
+        </a>        
+      </div>
+      <div class="pull-right">
+        <button type="button" class="btn btn-primary roof-trash {{trash}}">
+          <span class="glyphicon glyphicon-trash"></span>
+          Trash
+        </button>
+        <button type="button" class="btn btn-primary roof-star {{star}}">
+          <span class="glyphicon glyphicon-star"></span>
+          Star
+        </button>
+      </div>
+	  </div>
+
+  </div>
+</template>
+
