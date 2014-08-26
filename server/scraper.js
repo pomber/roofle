@@ -24,7 +24,8 @@ scrapSource = function (url, currentUser) {
 	var newRoofs = [];
 	for (var i = roofLites.length - 1; i >= 0; i--) {
 		var roofLite = roofLites[i];
-		if (!Roofs.contains(roofLite, currentUser)) {
+		if (!Roofs.contains(roofLite, currentUser) 
+			&& roofLite.url != null) {
 			var roof = scraper.getRoof(roofLite);
 			Roofs.add(roof, currentUser);
 			newRoofs.push(roof);
